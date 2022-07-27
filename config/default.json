@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://zye:qwerty12345@cluster0.dripm.mongodb.net/?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000"
+}
