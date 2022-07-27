@@ -1,18 +1,18 @@
-const express = require("express");
-const connectDB = require("./config/db")
+const express = require('express');
+const connectDB = require('./config/db');
+
 const app = express();
 
-// Connect to Database
+// Connect to database
 connectDB();
 
-app.use(express.json({extended: true}));
+app.use(express.json());
 
 // Define Routes
-app.use("/", require("./routes/index"))
-app.use("/api/url", require("./routes/url"))
+app.use('/', require('./routes/index'));
+app.use('/api/url', require('./routes/url'));
 
 
 const PORT = 5000;
-app.listen(PORT, () => {
-    console.log(`server is running on port ${PORT}`)
-});
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
