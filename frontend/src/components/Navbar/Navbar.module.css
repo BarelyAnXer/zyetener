@@ -1,0 +1,33 @@
+.navbar {
+    background-color: lightseagreen;
+    border: red 1px solid;
+    display: flex;
+    color: gray;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a {
+    color: rebeccapurple;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav .right {
+    display: flex;
+    flex-direction: row;
+    background-color: deeppink;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
