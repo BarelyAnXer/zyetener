@@ -3,18 +3,18 @@ import axios from "axios";
 import styles from "./SectionOne.module.css"
 import "../../index.css"
 
-function SectionOne() {
+
+function SectionOne(props) {
+  const {shortURL, updateShortURL} = props;
   const [inputValue, setInputValue] = useState("");
-  const [errorMessage, setErrorMessage] = useState("error");
-  const [shortURL, setShortURl] = useState("");
+
   const handleInputChange = async (event) => {
     event.preventDefault();
     const response = await axios.post("http://localhost:5000/api/url/shorten", {
       longUrl: inputValue
     });
     const data = await response.data;
-    console.log(data, "asdasd");
-    setShortURl(data.shortUrl);
+    updateShortURL(data.shortUrl);
   }
 
   return (
@@ -33,6 +33,26 @@ function SectionOne() {
                 type="submit">Shorten URL
         </button>
       </form>
+
+
+      {shortURL &&
+        <div className={styles.container}>
+          <input className={`${styles.input} input`}
+                 type="text"
+                 value={shortURL}
+                 readOnly={true}
+                 onChange={event => setInputValue(event.target.value)}/>
+
+          <button className={`${styles.button} button`}
+                  onClick={() => {
+                    navigator.clipboard.writeText(shortURL).then();
+                  }}
+                  type="submit">Copy
+          </button>
+        </div>
+      }
+
+
     </>
   );
 }

@@ -5,10 +5,11 @@ function Navbar() {
   return (
     <>
       <nav className={styles.navbar}>
-        <a href="#">Logo</a>
+        <a className={styles.logo}
+           href=""><b>ZY</b>tener</a>
         <div className={styles.right}>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
+          <a href="#">Github</a>
+          <a href="#">Gulu Gulu ?</a>
         </div>
       </nav>
     </>
