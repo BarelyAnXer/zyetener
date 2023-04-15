@@ -51,3 +51,21 @@
     border-color: #9147ff;
     background: #fff;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F1F1F1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #B3B3B3;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+}

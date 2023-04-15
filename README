@@ -1,0 +1,8 @@
+change base url from line 13 from url.js file in backend
+const baseUrl = "http://zytener-env.eba-2ntk9pyz.us-west-2.elasticbeanstalk.com"
+
+and change the post url from SectionOne.jsx
+"http://zytener-env.eba-2ntk9pyz.us-west-2.elasticbeanstalk.com/api/url/shorten"
+
+when uploading to elastic beanstalk also add  "start": "node index.js" if it dont exist
+compress all files (backend) excluding the frontend folder, node_modules
