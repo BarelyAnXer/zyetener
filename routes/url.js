@@ -10,7 +10,7 @@ const Url = require('../models/Url');
 // @desc      Create short URL
 router.post('/shorten', async (req, res) => {
   const {longUrl} = req.body;
-  const baseUrl = "http://zytener-env.eba-2ntk9pyz.us-west-2.elasticbeanstalk.com"
+  const baseUrl = "http://zytener.xyz"
 
   // Check base url
   if (!validUrl.isUri(baseUrl)) {

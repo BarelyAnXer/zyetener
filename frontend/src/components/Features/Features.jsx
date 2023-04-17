@@ -20,7 +20,7 @@ function Features() {
     }, {
       title: "Secure",
       logo: secure,
-      text: "Speed and security are our priorities. HTTPS and encryption protect your data when using our service."
+      text: "Speed and security are our priorities. encryption protect your data when using our service."
     }, {
       title: "Reliable",
       logo: reliable,
