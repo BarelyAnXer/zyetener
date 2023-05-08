@@ -10,7 +10,7 @@ function SectionOne(props) {
 
   const handleInputChange = async (event) => {
     event.preventDefault();
-    const response = await axios.post("http://zytener.xyz/api/url/shorten", {
+    const response = await axios.post("https://zytener.xyz/api/url/shorten", {
       longUrl: inputValue
     });
     const data = await response.data;

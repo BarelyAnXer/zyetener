@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
  <footer>
-    <p>&copy; 2023 Christian Cabral Gazzingan </p>
+    <p>&copy; 2023 Christian Cabral Gazzingan</p>
   </footer>
     </>
   );
